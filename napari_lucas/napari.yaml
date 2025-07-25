@@ -1,0 +1,40 @@
+name: napari-lucas
+display_name: Lucas
+contributions:
+  commands:
+    - id: napari-lucas.load_data
+      python_name: napari_lucas._widget:load_data_widget
+      title: Load Data
+    - id: napari-lucas.track_and_quantify
+      python_name: napari_lucas._widget:track_and_quantify
+      title: Track and Quantify
+    - id: napari-lucas.annotate_cells
+      python_name: napari_lucas._widget:annotate_cells_with_save_button
+      title: Annotate your Cells
+    - id: napari-lucas.post_annotation_quantification
+      python_name: napari_lucas._widget:post_annotation_quantification
+      title: Post Annotation Quantification
+    - id: napari-lucas.edges_vertices_quantification
+      python_name: napari_lucas._widget:run_edges_vertices_pipeline
+      title: Edges and Vertices Quantification
+    - id: napari-lucas.export_custom_table
+      python_name: napari_lucas._widget:export_custom_table
+      title: Export Custom Table
+    - id: napari-lucas.assign_populations
+      python_name: napari_lucas._widget:assign_populations
+      title: Manually Assign Populations
+  widgets:
+    - command: napari-lucas.load_data
+      display_name: Load Data
+    - command: napari-lucas.track_and_quantify
+      display_name: Track and Quantify
+    - command: napari-lucas.annotate_cells
+      display_name: Annotate your Cells
+    - command: napari-lucas.post_annotation_quantification
+      display_name: Post Annotation Quantification
+    - command: napari-lucas.edges_vertices_quantification
+      display_name: Quantify your Edges and Vertices
+    - command: napari-lucas.export_custom_table
+      display_name: Export Custom Table
+    - command: napari-lucas.assign_populations
+      display_name: Manually Assign Populations
